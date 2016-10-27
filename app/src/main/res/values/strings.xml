@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+  The MIT License (MIT)
+
+  Copyright (c) 2016 Nikhil Nayak <nikhilnayak98@gmail.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  THE SOFTWARE.
+-->
+<resources>
+  <string name="app_name">Pasupati Agrovet Track Client</string>
+  <string name="app_logo">Pasupati Agrovet</string>
+  <string name="shortcut_start">Pasupati Agrovet - Start</string>
+  <string name="shortcut_stop">Pasupati Agrovet - Stop</string>
+  <string name="settings_id_title">Device identifier</string>
+  <string name="settings_address_title">Server address</string>
+  <string name="settings_address_summary">Domain name or IP address</string>
+  <string name="settings_port_title">Server port</string>
+  <string name="settings_port_summary">Tracking server TCP port</string>
+  <string name="settings_interval_title">Frequency</string>
+  <string name="settings_interval_summary">Messages interval in seconds</string>
+  <string name="settings_status_title">Service status</string>
+  <string name="settings_status_off">Start</string>
+  <string name="settings_status_on">Stop</string>
+  <string name="settings_status_off_summary">Service stopped</string>
+  <string name="settings_status_on_summary">Service running</string>
+  <string name="settings_secure_title">Encryption</string>
+  <string name="settings_secure_off">Enable</string>
+  <string name="settings_secure_on">Disable</string>
+  <string name="settings_secure_off_summary">Encryption disabled</string>
+  <string name="settings_secure_on_summary">Encryption enabled</string>
+  <string name="settings_provider_title">Location provider</string>
+  <string name="settings_provider_summary">Source of location data</string>
+  <string name="settings_provider_gps">GPS provider</string>
+  <string name="settings_provider_network">Network provider</string>
+  <string name="settings_provider_mixed">Mixed provider</string>
+  <string name="settings_foreground_title">Foreground service</string>
+  <string name="settings_foreground_summary">Increase service priority</string>
+  <string name="menu_status">Status</string>
+  <string name="menu_about">About</string>
+  <string name="menu_shortcuts">Add shortcuts</string>
+  <string name="menu_clear">Clear</string>
+  <string name="about_description">Real time GPS tracker for Android exclusively for Pasupati Agrovet Pvt Ltd.</string>
+  <string name="about_license">This application is free and open source, source code is licensed under MIT License.</string>
+  <string name="about_web">Powered By - Google and OpenMaps</string>
+  <string name="status_service_create">Service created</string>
+  <string name="status_service_destroy">Service destroyed</string>
+  <string name="status_send_fail">Send failed</string>
+  <string name="status_location_update">Location update</string>
+  <string name="status_connectivity_change">Connectivity change</string>
+  <string name="hidden_app_name">Device Settings</string>
+  <string name="hidden_alert">The app has been hidden. To open it again please dial 8722227.</string>
+</resources>
