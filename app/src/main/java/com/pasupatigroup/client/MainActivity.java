@@ -131,6 +131,7 @@ public class MainActivity extends PreferenceActivity implements OnSharedPreferen
         }
     }
 
+
     private void removeLauncherIcon() {
         String className = MainActivity.class.getCanonicalName().replace(".MainActivity", ".Launcher");
         ComponentName componentName = new ComponentName(getPackageName(), className);
