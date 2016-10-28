@@ -57,7 +57,7 @@
   <string name="menu_clear">Clear</string>
   <string name="about_description">Real time GPS tracker for Android exclusively for Pasupati Agrovet Pvt Ltd.</string>
   <string name="about_license">This application is free and open source, source code is licensed under MIT License.</string>
-  <string name="about_web">Powered By - Google and OpenMaps</string>
+  <string name="about_web">Powered By - Google Maps and OpenMaps</string>
   <string name="status_service_create">Service created</string>
   <string name="status_service_destroy">Service destroyed</string>
   <string name="status_send_fail">Send failed</string>
