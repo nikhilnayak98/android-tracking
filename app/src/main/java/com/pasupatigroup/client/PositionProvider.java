@@ -66,6 +66,7 @@ public abstract class PositionProvider {
         period = Long.parseLong(preferences.getString(MainActivity.KEY_INTERVAL, null)) * 1000;
 
         type = preferences.getString(MainActivity.KEY_PROVIDER, "gps");
+
     }
 
     public abstract void startUpdates();

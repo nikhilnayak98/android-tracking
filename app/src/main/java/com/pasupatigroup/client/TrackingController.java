@@ -87,11 +87,14 @@ public class TrackingController implements PositionProvider.PositionListener, Ne
 
         PowerManager powerManager = (PowerManager) context.getSystemService(Context.POWER_SERVICE);
         wakeLock = powerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, getClass().getName());
+
     }
 
     public void start() {
         if (isOnline) {
             read();
+        }
+        else {
         }
         try {
             positionProvider.startUpdates();
@@ -110,6 +113,7 @@ public class TrackingController implements PositionProvider.PositionListener, Ne
         }
         handler.removeCallbacksAndMessages(null);
     }
+
 
     @Override
     public void onPositionUpdate(Position position) {
