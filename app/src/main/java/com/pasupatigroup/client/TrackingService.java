@@ -29,11 +29,6 @@ import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
-import android.location.LocationManager;
-import android.media.AudioManager;
-import android.media.Ringtone;
-import android.media.RingtoneManager;
-import android.net.Uri;
 import android.os.Build;
 import android.os.IBinder;
 import android.util.Log;
@@ -42,9 +37,6 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 public class TrackingService extends Service {
-
-    public Ringtone ringtone;
-    public Context context;
 
     private static final String TAG = TrackingService.class.getSimpleName();
     private static final int NOTIFICATION_ID = 1;
@@ -141,24 +133,6 @@ public class TrackingService extends Service {
         if (trackingController != null) {
             trackingController.stop();
         }
-    }
-
-    public void isGpsOff() {
-        AudioManager audioManager = (AudioManager) this.context.getSystemService("audio");
-        audioManager.setStreamVolume(4, audioManager.getStreamMaxVolume(4), 0);
-        Uri path = Uri.parse("android.resource://" + this.context.getPackageName() + "/raw/alert");
-        this.ringtone = RingtoneManager.getRingtone(this.context, path);
-        this.ringtone.setStreamType(4);
-        this.ringtone.play();
-    }
-
-    public void isGpsOn() {
-        AudioManager audioManager = (AudioManager) this.context.getSystemService("audio");
-        audioManager.setStreamVolume(4, audioManager.getStreamMaxVolume(4), 0);
-        Uri path = Uri.parse("android.resource://" + this.context.getPackageName() + "/raw/alert");
-        this.ringtone = RingtoneManager.getRingtone(this.context, path);
-        this.ringtone.setStreamType(4);
-        this.ringtone.stop();
     }
 
 }
