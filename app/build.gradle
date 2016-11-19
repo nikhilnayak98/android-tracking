@@ -8,12 +8,14 @@ android {
         minSdkVersion 10
         targetSdkVersion 24
         versionCode 32
-        versionName '3.12'
+        versionName '4.12'
+        multiDexEnabled true
     }
 
     lintOptions {
         checkReleaseBuilds false
     }
+
 
     productFlavors {
         regular {
@@ -26,6 +28,11 @@ android {
         }
     }
 
+    configurations {
+        all*.exclude group: 'com.android.support', module: 'support-v4'
+        all*.exclude group: 'com.android.support', module: 'support-annotations'
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -36,7 +43,6 @@ android {
 
 dependencies {
     compile 'com.android.support:appcompat-v7:24.2.1'
-    compile 'com.google.android.gms:play-services:7.8.0'
     testCompile 'junit:junit:4.12'
     testCompile 'org.robolectric:robolectric:3.0'
 }
