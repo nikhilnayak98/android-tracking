@@ -53,9 +53,10 @@ public class GPSCheck extends BroadcastReceiver {
         ringtone = RingtoneManager.getRingtone(context, path);
         ringtone.setStreamType(4);
 
-        if(!locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
+        // toast not required
+        /* if(!locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
             Toast.makeText(context, "GPS is turned off", Toast.LENGTH_LONG).show();
-        }
+        } */
         while (!locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
             ringtone.play();
         }
